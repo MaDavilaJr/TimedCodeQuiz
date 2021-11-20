@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  <title>Timed Code Quizlet</title>
+</head>
+
+<body>
+
+  <div class="min-vh-100 d-flex align-items-center bg-dark">
+   
+    <section class="w-100 row justify-content-center">
+
+      <div class="col-10 col-md-6 col-lg-5">
+
+        <h1 class="display-3 text-center text-white">Code Quiz</h1>
+
+        <form class="bg-white my-4 p-4 rounded">
+            <div class="timer"> Time: <span id="time">0</span></div>
+            <div id="startScreen" class="startScreen">
+                <h1>Timed Coding Quiz</h1>
+                <p>Answer the questions correctly or have 10 sec penalized!</p>
+                <button id="start">Start Quiz</button>
+            </div>
+            
+            <div id="questions" class="hide">
+                <h2 id="question-title"></h2>
+                <div id="choices" class="choices">
+                </div>
+            </div>
+
+            <div class="endScreen hide" id="endScreen">
+                <h2>Quiz Over</h2>
+                <p>Your Final Score is <span id="final-score"></span></p>
+                <p>Enter your Initials: <input type="text" id="Initials" max="3">
+                <button id="submit">Submit</button></p>
+            </div>
+
+            <div class="Highscores" id="Highscores">
+              <h3>Highscores</h3>
+              <p><span id="final-score"></span></p>
+              
+              </p>
+                <!-- Added Highscore List -->
+              <!-- <button onclick="highscores.html"></button> -->
+              <ul id = Highscores></ul>
+              <a href="./highscores.html">View Highscores by Rightclicking to Open Link</a>
+              <!-- <script src="./highscores.js"></script> -->
+          </div>
+    
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- <div>
+    <ul id = Highscores></ul>
+    <a href="./highscores.html"></a>
+    <script src="./highscores.js"></script>
+  </div> -->
+<script src="./script.js"></script>
+</body>
+
+</html>
